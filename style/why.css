@@ -1,0 +1,7 @@
+.why {
+	height: 70vh;
+	display:flex;
+	flex-direction: column;
+	gap: 10vh;
+	text-align: center;
+}

@@ -1,0 +1,22 @@
+.recomended {
+	padding-block: clamp(3rem, 30vw, 6rem);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 6vh;
+}
+
+.recomended section {
+	display: flex;
+	width: 100%;
+	padding: 0 5% 0 5%;
+	gap: 5%;
+}
+
+.recomended section .left,
+.recomended section .right {
+	flex: 0 0 50%;
+}
+
+

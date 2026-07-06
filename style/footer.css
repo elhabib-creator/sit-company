@@ -1,0 +1,55 @@
+footer {
+	display: flex;
+	width: 100%;
+	height: 70vh;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: stretch;
+}
+footer .ligne-one {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+footer .ligne-one .top {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+footer .ligne-one .top > * {
+	display: flex;
+	flex-flow: nowrap column;
+	gap: 5%;
+}
+
+footer .ligne-one .top img {
+	max-width:45px;
+	max-height: 45px;
+}
+
+footer .ligne-one .bottom {
+	display: flex;
+	flex-direction: column;
+}
+
+.ligne-tew {
+	display: flex;
+	gap: 5%
+}
+
+footer .ligne-tew .icon {
+	height: 35px;
+	width: 35px;
+}
+
+footer .ligne-tree {
+	justify-self: flex-end;
+}
+
+footer > *:not(.ligne-one),
+.ligne-one .bottom {
+	padding-left: 5%;
+}

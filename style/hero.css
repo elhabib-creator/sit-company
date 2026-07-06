@@ -1,0 +1,72 @@
+:root {
+	--hero-title-font-size:clamp(2.3rem, 5vw, 5rem);
+	--font-size:1rem;
+	--hero-background: #fafafa;
+}
+
+
+.hero {
+	display: flex;
+	min-height: calc(100vh - var(--header-height));
+	align-items: stretch;
+	background: var(--hero-background);
+	padding-inline: 5%;
+}
+
+/*=======hero-left============*/
+.hero .left {
+	flex: 0 0 55vw;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 7vh;
+	padding-block: 5vh 5vh;
+}
+
+.sub-title {
+	font-weight:600;
+	letter-spacing:.05em;
+	text-transform:uppercase;
+}
+
+.title {
+	font-size:var(--hero-title-font-size);
+	font-weight: 700;
+	line-height: 1.05;
+}
+
+.cta-container {
+	display: flex;
+	flex-flow: column wrap;
+	gap: 1vh;
+}
+
+/*=======hero-right===========*/
+.hero .right {
+	flex: 0 0 35vw;
+	background: url(../assets/images/chair-removebg-preview.png) no-repeat center / contain;
+}
+
+/*========responsive==========*/
+@media (max-width:900px) {
+	.hero .left {
+		flex: 1;
+		text-align: center;
+		align-items: center;
+	}
+	.cta-container > .cta {
+		display: flex;
+		flex-direction: column;
+		gap: 1vh;
+	}
+	.hero .contact {
+		display: block
+	}
+
+	.hero .right {
+		display: none;
+		flex: none;
+	}
+}

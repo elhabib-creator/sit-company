@@ -1,0 +1,152 @@
+/*====================Header====================*/
+:root {
+	--header-font-size: clamp(0.9rem, 1vw, 1.4rem)
+}
+a { 
+	text-decoration: none;
+	color: inherit;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: var(--header-height);
+	border: 1px solid rgb(255 255 255 / 20%);
+	background: rgb(217 204 204 / 15%);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	z-index: 1000;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding:0 clamp(1rem, 4vw, 3rem);
+	white-space: nowrap;
+	font-size: var(--header-font-size);
+	gap: 1rem;
+}
+
+.left-part,
+.center-part {
+	flex: 1 1 20%;
+	font-size: var(--header-font-size);
+}
+
+/*===========Left Part============*/
+.left-part {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.c-name {
+	font-size: calc(var(--header-font-size) * 1.6);
+	font-weight: 700;
+}
+
+.slogan {
+	font-size: calc(var(--header-font-size) * 0.9);
+	opacity: 0.8;
+}
+
+/*=========Center Part===========*/
+.center-part {
+	display: flex;
+	justify-content: space-around;
+	gap: 0.3rem;
+	align-items: center;
+}
+
+.center-part a {
+	font-size: inherit;
+	font-weight: 500;
+	padding: 1em clamp(0.25em, 1.5vw, 1.8em);
+	border-radius: 0.2em;
+}
+
+.center-part a:hover,
+.center-part a.active {
+	background: rgb(255 255 255 / 35%);
+}
+
+/*=======Right Part==========*/
+.right-part {
+	flex: 1 1 20%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 1rem;
+}
+
+.shop,
+.contact {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(var(--header-font-size) * 1.1);
+	padding: 1em 1.8em;
+	border-radius: 0.5em;
+	max-height: calc(var(--header-height) * 0.8);
+}
+
+.contact {
+	border: currentColor solid 1px;
+	transition: background 200ms ease 200ms, color 200ms ease 200ms;
+}
+.contact:hover {
+	background: black;
+	color: white;
+	border: black solid 1px;
+}
+
+.shop {
+	background: black;
+	color: white;
+	font-weight: 600;
+	transition: transform 200ms ease 200ms;
+}
+.shop:hover {
+	transform: scale(1.02);
+}
+
+/*===========Responsive========*/
+@media (max-width: 940px) {
+	.center-part {
+		display: none;
+	}
+	.left-part {
+		flex: 1;
+	}
+	.right-part {
+		flex: 0 0 auto;
+	}
+
+}
+
+@media (max-width: 600px) {
+	.contact {
+		display: none;
+	}
+}
+
+@media (max-width: 400px) {
+	.shop {
+		flex-shrink: 1;
+		padding: 15% 10%;
+		font-size: clamp(0.7rem, 5vw, 999px);
+	}
+	.c-name {
+		flex-shrink: 1;
+		font-size: clamp(0.75rem, 5.5vw, 999px);
+	}
+	.slogan {
+		font-size: clamp(0.56rem, 4vw, 999px);
+		white-space: normal;
+	}
+	header {
+		gap: 2rem;
+	}
+}
+
