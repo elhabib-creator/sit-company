@@ -1,24 +1,45 @@
 .selected {
-	height: 90vh;
+	padding-block: clamp(3rem, 30vw, 6rem);
+	padding-inline: clamp(0.5rem, 2.5vw, 4rem);
 	text-align: center;
 	display: flex;
 	flex-direction: column;
-	gap: 7vh;
-
+	gap: 7vw;
 }
 
-.products {
+.track {
 	display: flex;
+	flex-flow: nowrap row;
+	align-items: center;
 	justify-content: space-around;
-	height: 60vh;
-	
+	gap: clamp(12px, 1.5vw, 30px); 
+	transition: transform .4s;
 }
-.product {
-	flex: 0 0 23%;
-	background-color: rgb(255 255 255 / 20%);
+
+.viewport {
 	display: flex;
+	overflow: hidden;
+	border: 1px solid black;
+
+}
+
+.product {
+	min-height: 4rem;
+	flex: 0 1 300px;
+	padding-inline: 2rem;
+	padding-block: 2rem;
+	gap: 2vw; 
+
+	background-color: rgb(250 230 255 / 100%);
+	display: flex;
+	flex-flow: nowrap column;
 	justify-content: center;
 	align-items: center;
 	border-radius: 0.5vw;
+}
 
+@media (max-width: 800px){
+	.track {
+		gap: 12px;
+	}
 }

@@ -1,6 +1,8 @@
 :root {
-	--card-background-color: #947676;
+	--card-background-color: rgb(241 240 242 /100%);
 	--card-font-size: clamp(1.5rem, 1.5rem, 1.5rem);
+	--card-imag-width: clamp(5rem, 10vw, 4rem);
+	
 
 }
 
@@ -11,7 +13,8 @@
 }
 
 .card {
-	flex: 0 0 18%;
+	flex: 0 0 clamp(calc(2 * var(--card-imag-width)), 18%, 25rem);
+	min-height: clamp(3rem, 25vw, 50rem);
 	display: flex;
 	flex-direction: column;
 	text-align: center;
@@ -22,6 +25,16 @@
 }
 
 .card img {
-	width : 100%;
+	width : var(--card-imag-width);
 	height: auto;
+}
+
+@media (max-width: 800px) {
+	.examples {
+		flex-flow: wrap row;
+		row-gap: 1rem;
+	}
+	img {
+		width: 3.5rem;
+	}
 }

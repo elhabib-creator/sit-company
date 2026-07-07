@@ -1,5 +1,5 @@
 .recomended {
-	padding-block: clamp(3rem, 30vw, 6rem);
+	padding-block: clamp(1rem, 15vw, 3rem);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -19,4 +19,13 @@
 	flex: 0 0 50%;
 }
 
+.recomended section .left > *,
+.recomended section .right > * {
+	padding: 1vw;
+}
+.recomended .left div p,
+.recomended .right div p {
+	font-size : 0.9rem;
+	color: rgb(0 0 0 / 80%);
+}
 

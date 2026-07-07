@@ -35,6 +35,11 @@ header {
 }
 
 /*===========Left Part============*/
+.left-part-t {
+	display: flex;
+	align-items: center;
+}
+
 .left-part {
 	display: flex;
 	flex-direction: column;
