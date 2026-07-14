@@ -14,6 +14,7 @@
 	justify-content: space-around;
 	gap: clamp(12px, 1.5vw, 30px); 
 	transition: transform .4s;
+	
 }
 
 .viewport {
@@ -37,6 +38,34 @@
 	align-items: center;
 	border-radius: 0.5vw;
 }
+
+.slider {
+	display: flex;
+	position: relative;
+/*	justify-content: space-between;*/
+}
+
+.selected .prev,
+.selected .next {
+	z-index: 2;
+	position: absolute;
+/*	justify-self: space-between;*/
+	align-self: center;
+	padding: 0.4rem;
+}
+
+.selected .prev {
+	left: 0;
+/*	justify-self: flex-start;*/
+	margin-left: 0.5rem;
+}
+
+.selected .next {
+	right: 0;
+/*	justify-self: flex-end;*/
+	margin-right: 0.5rem;
+}
+
 
 @media (max-width: 800px){
 	.track {

@@ -1,6 +1,8 @@
 /*====================Header====================*/
 :root {
 	--header-font-size: clamp(0.9rem, 1vw, 1.4rem)
+	--header-background-color: white;
+	--header-border-bottom-color: #E5E7EB;
 }
 a { 
 	text-decoration: none;
@@ -14,10 +16,11 @@ header {
 	width: 100%;
 	height: var(--header-height);
 	border: 1px solid rgb(255 255 255 / 20%);
-	background: rgb(217 204 204 / 15%);
-	backdrop-filter: blur(12px);
-	-webkit-backdrop-filter: blur(12px);
+	background: var(--header-background-color);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
 	z-index: 1000;
+	border-bottom:1px solid var(--header-border-bottom-color);
 
 	display: flex;
 	justify-content: space-between;
@@ -107,7 +110,7 @@ header {
 }
 
 .shop {
-	background: black;
+	background: #2563EB;
 	color: white;
 	font-weight: 600;
 	transition: transform 200ms ease 200ms;

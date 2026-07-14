@@ -1,7 +1,26 @@
+
 .why {
-	height: 70vh;
 	display:flex;
 	flex-direction: column;
-	gap: 10vh;
+	gap: max(1rem, 5vw, 8rem);
 	text-align: center;
+}
+
+.why section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: wrap row;
+	gap: clamp(0rem, 3vw, 3rem)
+}
+
+.why section .card {
+	display: inline-flex;
+	font-size: 1.5rem;
+	padding: 1rem;
+	gap: clamp(0rem, 3vw, 3rem)
+}
+
+.why .title {
+	font-size: 1.5rem;
 }

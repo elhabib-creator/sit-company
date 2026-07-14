@@ -13,18 +13,21 @@
 	flex-direction: column;
 	gap: 2vw;
 	align-items: center;
+	margin-inline: 2rem;
 }
 
 .reviews section div {
-	width: 70%;
+	width: 40rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
+	padding: 2rem;
 }
 
 
 .reviews section div img {
-	height: 65px;
-	width: 65px;
+	height: 4rem;
+	aspect-ratio: 1;
+	margin: 1rem
 }

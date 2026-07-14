@@ -5,19 +5,24 @@
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
-	gap: 8vh;
+	gap: 4vw;
 }
 
 .partners section {
 	display: flex;
 	justify-content: center;
 	flex-flow: wrap;
-	gap: 6vh;
+	gap: 3vw;
 }
 
 .partners section div {
 	display: flex;
 	flex-flow: column nowrap;
 	flex: 0 0 40%;
-	gap: 4vh;
+	gap: 2vw;
+}
+
+.partners .logo {
+	max-height: 2rem;
+	aspect-ratio: 1;
 }

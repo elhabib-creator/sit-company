@@ -1,6 +1,11 @@
-The project aims to establish a presence for the company and its products online, enabling it to exert influence and open communication channels with potential customers. It also aims to provide all its customers with quick and effective access to all of this across all the devices they might use: televisions, computers, tablets, and phones.
+The project aims to establish a presence for the company and itTs products online, enabling it to exert influence and open communication channels with potential customers. It also aims to provide all its customers with quick and effective access to all of this across all the devices they might use: televisions, computers, tablets, and phones.
+<<<<<<<<<<<<<<<<<<<Identity>>>>>>>>>>>>>>>>>>
+	Premium
 
-The structure
+		Minimal
+
+			Comfort
+<<<<<<<<<<<<<<<<<<<THE STRUCTUR>>>>>>>>>>>>>>>
 header: | SIT company, "Comfort, health and enjoyment"  | nav                                        | <Contact Us> <Join Now>
 hero :
 	| Slogan: Your health comes first.

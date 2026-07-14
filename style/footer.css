@@ -1,3 +1,7 @@
+:root {
+	a-background-color: #0F172A;
+}
+
 footer {
 	padding-bottom: clamp(1rem, 15vw, 3rem);
 	display: flex;
@@ -5,11 +9,20 @@ footer {
 	justify-content: space-around;
 	align-items: stretch;
 	border-top: 1px black solid;
+
+	transition: all .3s ease;
 }
+
+footer a:hover {
+	background-color: #f2f2f2;
+	transform: translateY(-1px) scale(1.03);
+}
+
+footer 
 footer .ligne-one {
 	padding-bottom: clamp(0.5rem, 7vw, 1.5rem);
 	display: flex;
-	flex-flow: nowrap column;
+	flex-flow:f nowrap column;
 	align-items: stretch;
 }
 
@@ -24,6 +37,7 @@ footer .ligne-one .top {
 	align-items: flex-start;
 	border-bottom: 1px gray solid;
 }
+
 @media (max-width: 800px) {
 	.footer .ligne-one .top {
 		flex-wrap: wrap;

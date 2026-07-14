@@ -1,7 +1,7 @@
 :root {
 	--hero-title-font-size:clamp(2.3rem, 5vw, 5rem);
 	--font-size:1rem;
-	--hero-background: #fafafa;
+	--hero-background-color: linear-gradient(180deg, #F8FAFC, #EEF4FF);
 }
 
 
@@ -9,7 +9,7 @@
 	display: flex;
 	min-height: calc(100vh - var(--header-height));
 	align-items: stretch;
-	background: var(--hero-background);
+	background-color: var(--hero-background-color);
 	padding-inline: 5%;
 }
 
@@ -28,13 +28,12 @@
 .sub-title {
 	font-weight:600;
 	letter-spacing:.05em;
-	text-transform:uppercase;
+	text-transform: capitalize;
 }
 
 .title {
 	font-size:var(--hero-title-font-size);
 	font-weight: 700;
-	line-height: 1.05;
 }
 
 .cta-container {
@@ -70,3 +69,5 @@
 		flex: none;
 	}
 }
+
+.

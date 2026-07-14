@@ -1,0 +1,36 @@
+:root {
+  --sem: 16px; /*from s(pesial) em*/
+}
+.title {
+  /*Typography*/
+  font-size: clamp(.8rem, 5vw, 7rem);
+  font-family: sans-cherif;
+  font-weight: 501;
+  font-style: normal;
+  font-variant: normal;
+  letter-spacing:normal;
+  word-spacing: normal;
+  line-height: 1.2;
+  
+  /*Text Layout*/
+  text-align: center; /*just for experiance but i dont think 
+  it had a reel effect on the text becose the box is allredy have 
+  the size of the content wesh is the text in our case, therfor
+  ther is no space for the text to be aligned or ajusted, but i have 
+  a question: is the proprety "text-align" = "align-items" and what
+  about the justifecation */
+  text-transform: none;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  text-indent: 0px;
+  text-wrap: wrap;
+  white-space: normal;
+  
+  /*Container*/
+  max-width: 468px;
+  padding: 1rem;
+  
+  /*Container relation with the content*/
+  overflow: hidden;
+
+}

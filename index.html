@@ -5,10 +5,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>SIT Company</title>
 		<meta name="description" content="Ergonomic chairs designed to keep you comfortable, productive, and free from back pain." />
-		<link rel="stylesheet" href="style/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style/base.css">
 		<link rel="stylesheet" href="style/header.css">
 		<link rel="stylesheet" href="style/hero.css">
-		<link rel="stylesheet" href="style/why.css">	
+		<link rel="stylesheet" href="style/why.css">
 		<link rel="stylesheet" href="style/examples.css">
 		<link rel="stylesheet" href="style/recomended.css">
 		<link rel="stylesheet" href="style/reviews.css">	
@@ -19,6 +23,7 @@
 
 	</head>
 	<body>
+		<!--======Header========================================-->
 		<header>
 			<section class="left-part-t">
 				<img src="assets/icons/logo.svg" style="width: 30px; height: 30px;">
@@ -38,25 +43,30 @@
 			</section>
 		</header>
 
+		
 		<main>
+			<!--=======Hero==================================-->
 			<section class="hero">
 				<div class="left">
 					<p class="sub-title">✓ Ergonomic Seating Solutions</p>
 					<p class="title">Ergonomic chairs designed for healthy work.</p>
 					<div class="cta-container">
-						<nav class="cta">
+						<nav class="top">
 							<a class="shop" target="_blank" href="https://sit.com/shop">Shop now</a> 
 							<a class="contact" target="_blank" href="https://sit.com/contact-us">Request consultation</a>
 						</nav>
-						<p class="slogan">✓ 5-Year Warranty</p>
-						<p class="slogan">✓ Ergonomic Certified</p>
-						<p class="slogan">✓ Business Consultation</p>
+						<div class="bottom">
+							<p class="slogan">✓ 5-Year Warranty</p>
+							<p class="slogan">✓ Ergonomic Certified</p>
+							<p class="slogan">✓ Business Consultation</p>
+						</div>
 					</div>
 				</div>
 				<div class="right">
 				</div>
 			</section>
 
+			<!--=====Examples================================-->
 			<section class="examples">
 				<div class="card">
 					<img src="./assets/icons/office.svg">
@@ -84,13 +94,29 @@
 				</div>
 			</section>
 
+			<!--=====Why================================-->
 			<section id="why" class="why">
 				<h2>why our chairs:</h2>
-					<h3>+ Lumbar support.</h3>
-					<h3>+ Breathable materials.</h3>
-					<h3>+ Five-year warranty.</h3>
+				<section>
+					<div class="card">
+						<img class="icon" src="./assets/icons/lumbar-support.svg">
+						<h3 class="title">+ Lumbar support.</h3>
+						<p class="discription"></p>
+					</div>
+					<div class="card">
+						<img class="icon" src="./assets/icons/breathable-materials.svg">
+						<h3 class="title">+ Breathable materials.</h3>
+						<p class="discription"></p>
+					</div>
+					<div class="card">
+						<img class="icon" src="./assets/icons/five-years-warranty.svg">
+						<h3 class="title">+ Five-years warranty.</h3>
+						<p class="discription"></p>
+					</div>
+				</section>
 			</section>
 
+			<!--=====Selected================================-->
 			<section class="selected">
 				<h2>Selected products:</h2>
 				<section class="slider">
@@ -101,31 +127,80 @@
 						<div class="track">
 							<div class="product">
 								<img src="./assets/icons/logo.svg">
-								<p>Sit product</p>
+								<p class="chair-name">Sit product</p>
+								<div class="star-rating">
+									<img class="star" src="./assets/icons/star.svg">
+									<img class="star" src="./assets/icons/star.svg">
+									<img class="star" src="./assets/icons/star.svg">
+									<img class="star" src="./assets/icons/star.svg">
+									<img class="star" src="./assets/icons/star.svg">
+								</div>
+								<p class="price">319$</p>
+
 							</div>
 							<div class="product">
 								<img src="./assets/icons/logo.svg">
-								<p>Sit product</p>
+								<p class="chair-name">Sit product</p>
+								<div class="star-rating">
+									<img class="star" src="./assets/icons/star.svg">
+									<img class="star" src="./assets/icons/star.svg">
+									<img class="star" src="./assets/icons/star.svg">
+									<img class="star" src="./assets/icons/star.svg">
+									<img class="star" src="./assets/icons/star.svg">
+								</div>
+								<p class="price">499$</p>
 							</div>
 
 							<div class="product">
 								<img src="./assets/icons/logo.svg">
-								<p>Sit product</p>
+								<p class="chair-name">Sit product</p>
+								<div class="star-rating">
+									<img class="star" src="./assets/icons/star.svg">
+									<img class="star" src="./assets/icons/star.svg">
+									<img class="star" src="./assets/icons/star.svg">
+									<img class="star" src="./assets/icons/star.svg">
+									<img class="star" src="./assets/icons/star.svg">
+								</div>
+								<p class="price">299$</p>
 							</div>
 	
 							<div class="product">
 								<img src="./assets/icons/logo.svg">
-								<p>Sit product</p>
+								<p class="chair-name">Sit product</p>
+								<div class="star-rating">
+									<img class="star" src="./assets/icons/star.svg">
+									<img class="star" src="./assets/icons/star.svg">
+									<img class="star" src="./assets/icons/star.svg">
+									<img class="star" src="./assets/icons/star.svg">
+									<img class="star" src="./assets/icons/star.svg">
+								</div>
+								<p class="price">419$</p>
 							</div>
 	
 							<div class="product">
 								<img src="./assets/icons/logo.svg">
-								<p>Sit product</p>
+								<p class="chair-name">Sit product</p>
+								<div class="star-rating">
+									<img class="star" src="./assets/icons/star.svg">
+									<img class="star" src="./assets/icons/star.svg">
+									<img class="star" src="./assets/icons/star.svg">
+									<img class="star" src="./assets/icons/star.svg">
+									<img class="star" src="./assets/icons/star.svg">
+								</div>
+								<p class="price">999$</p>
 							</div>
 	
 							<div class="product">
 								<img src="./assets/icons/logo.svg">
-								<p>Sit product</p>
+								<p class="chair-name">Sit product</p>
+								<div class="star-rating">
+									<img class="star" src="./assets/icons/star.svg">
+									<img class="star" src="./assets/icons/star.svg">
+									<img class="star" src="./assets/icons/star.svg">
+									<img class="star" src="./assets/icons/star.svg">
+									<img class="star" src="./assets/icons/star.svg">
+								</div>
+								<p class="price">249$</p>
 							</div>
 						</div>
 					</section>
@@ -135,6 +210,7 @@
 				</section>
 			</section>
 
+			<!--=====Recomended================================-->
 			<section class="recomended">
 				<h2>Recommended by:</h2>
 				<section>
@@ -164,80 +240,102 @@
 				</section>
 			</section>
 
+			<!--=====Reviews================================-->
 			<section class="reviews" id="reviews">
 				<h2>Reviews (Customers):</h2>
 				<section>
-					<div>
+					<div class="card">
+						<div class="star-rating">
+							<img id="star" class="star" src="./assets/icons/star.svg">
+							<img id="star" class="star" src="./assets/icons/star.svg">
+							<img id="star" class="star" src="./assets/icons/star.svg">
+							<img id="star" class="star" src="./assets/icons/star.svg">
+							<img id="star" class="star" src="./assets/icons/star.svg">
+						</div>
+						<p class="quote">My back used to hurt from the long hours I spent sitting at work, and I gradually became afraid of sitting altogether. But after trying your chair, everything changed. Sitting has become as normal and natural as ever in my day. Thank you so much for your effort and dedication.</p>
 						<img src="./assets/icons/a-mehdi.svg" width=35 height=35>
-						<h4>Mehdi (Freelance Developer)</h4>
-						<p>My back used to hurt from the long hours I spent sitting at work, and I gradually became afraid of sitting altogether. But after trying your chair, everything changed. Sitting has become as normal and natural as ever in my day. Thank you so much for your effort and dedication.</p>
+						<h4 class="name">Mehdi (Freelance Developer)</h4>
 					</div>
 
-					<div>
+					<div class="card">
+						<div class="star-rating">
+							<img id="star" class="star" src="./assets/icons/star.svg">
+							<img id="star" class="star" src="./assets/icons/star.svg">
+							<img id="star" class="star" src="./assets/icons/star.svg">
+							<img id="star" class="star" src="./assets/icons/star.svg">
+							<img id="star" class="star" src="./assets/icons/star.svg">
+						</div>
+						<p class="quote">I spend most of my day designing, which means sitting for hours without many breaks. This chair gave me the support I had been missing for years. It's comfortable, sturdy, and has noticeably reduced the fatigue I used to feel by the end of the day.</p>
 						<img src="./assets/icons/a-john.svg" width=35 height=35>
 						<h4>John (Graphic Designer)</h4>
-						<p>I spend most of my day designing, which means sitting for hours without many breaks. This chair gave me the support I had been missing for years. It's comfortable, sturdy, and has noticeably reduced the fatigue I used to feel by the end of the day.</p>
 					</div>
 
-					<div>
-						<img src="./assets/icons/a-sara.svg" width=35 height=35>
-						<h4>Sara (University Student)</h4>
-						<p>As a student, I often study late into the night, and finding a chair that stays comfortable for long sessions was never easy. Since I started using this one, I can focus on my work without constantly shifting around to get comfortable. It has made a real difference in my daily routine.</p>
+					<div class="card">
+						<div class="star-rating">
+							<img id="star" class="star" src="./assets/icons/star.svg">
+							<img id="star" class="star" src="./assets/icons/star.svg">
+							<img id="star" class="star" src="./assets/icons/star.svg">
+							<img id="star" class="star" src="./assets/icons/star.svg">
+							<img id="star" class="star" src="./assets/icons/star.svg">
 						</div>
+						<p class="quote">As a student, I often study late into the night, and finding a chair that stays comfortable for long sessions was never easy. Since I started using this one, I can focus on my work without constantly shifting around to get comfortable. It has made a real difference in my daily routine.</p>
+						<img src="./assets/icons/a-sara.svg" width=35 height=35>
+						<h4 class="name">Sara (University Student)</h4>
+					</div>
 
-					<div>
+					<div class="card">
+						<div class="star-rating">
+							<img id="star" class="star" src="./assets/icons/star.svg">
+							<img id="star" class="star" src="./assets/icons/star.svg">
+							<img id="star" class="star" src="./assets/icons/star.svg">
+							<img id="star" class="star" src="./assets/icons/star.svg">
+							<img id="star" class="star" src="./assets/icons/star.svg">
+						</div>
+						<p class="quote">I've tried several office chairs over the years, but this is the first one that truly feels designed for people who sit all day. The build quality is excellent, the ergonomic support is noticeable, and after weeks of use, I can confidently say it was worth every penny.</p>
 						<img src="./assets/icons/a-jake.svg" width=35 height=35>
-						<h4>Jake (Software Engineer)</h4>
-						<p>I've tried several office chairs over the years, but this is the first one that truly feels designed for people who sit all day. The build quality is excellent, the ergonomic support is noticeable, and after weeks of use, I can confidently say it was worth every penny.</p>
+						<h4 class="name">Jake (Software Engineer)</h4>
 					</div>
-					<div>
+					<div class="card">
+						<div class="star-rating">
+							<img id="star" class="star" src="./assets/icons/star.svg">
+							<img id="star" class="star" src="./assets/icons/star.svg">
+							<img id="star" class="star" src="./assets/icons/star.svg">
+							<img id="star" class="star" src="./assets/icons/star.svg">
+							<img id="star" class="star" src="./assets/icons/star.svg">
+						</div>
+						<p class="quote">Writing a novel means spending countless hours at my desk every single day. I used to take frequent breaks because my back would become uncomfortable after just a couple of hours. Since switching to this chair, I can stay focused on my writing for much longer without constantly thinking about my posture. It's one of the best investments I've made for my workspace.</p>
 						<img src="./assets/icons/a-olivia.svg" width=35 height=35>
-						<h4>Olivia (Author):</h4>Trusted by:
-						<p>Writing a novel means spending countless hours at my desk every single day. I used to take frequent breaks because my back would become uncomfortable after just a couple of hours. Since switching to this chair, I can stay focused on my writing for much longer without constantly thinking about my posture. It's one of the best investments I've made for my workspace.</p>
+						<h4 class="name">Olivia (Author):</h4>Trusted by:
 					</div>
-					<div>
-						<img src="./assets/icons/a-michael.svg" width=35 height=35>
-						<h4>Michael (Real Estate Agency Owner):</h4>
-						<p>Running a real estate business involves meetings, paperwork, and long hours behind a desk. I wanted a chair that looked professional while providing real comfort, and this one delivered on both. My office feels more welcoming, and I finish my workday feeling far less fatigued than before.</p>
+					<div class="card">
+						<div class="star-rating">
+							<img id="star" class="star" src="./assets/icons/star.svg">
+							<img id="star" class="star" src="./assets/icons/star.svg">
+							<img id="star" class="star" src="./assets/icons/star.svg">
+							<img id="star" class="star" src="./assets/icons/star.svg">
+							<img id="star" class="star" src="./assets/icons/star.svg">
+						</div>
+						<p class="quote">Running a real estate business involves meetings, paperwork, and long hours behind a desk. I wanted a chair that looked professional while providing real comfort, and this one delivered on both. My office feels more welcoming, and I finish my workday feeling far less fatigued than before.</p>
+						<img class="avatar" src="./assets/icons/a-michael.svg" width=35 height=35>
+						<h4 class="name">Michael (Real Estate Agency Owner):</h4>
 					</div>
 				</section>
 			</section>
 
+			<!--=====Partners================================-->
 			<section class="partners" id="partners">
 				<h2>Partners (companys, restrants, brands, Universities and institutions):</h2>
 				<section>
-					<section class="left">
-						<div>
-							<h4>NovaTech Solutions:</h4>
-							<p>A software company that equipped its entire development team with ergonomic workstations.</p>
-						</div>
-						<div>
-							<h4>Horizon Real Estate</h4>
-							<p>Partnered with us to furnish their headquarters with comfortable seating for employees and clients.</p>
-						</div>
-						<div>
-							<h4>BrightMind University:</h4>
-							<p>Supplied study halls and computer laboratories with ergonomic chairs designed for long study sessions.</p>
-						</div>
-					</section>
-					<section class="right">
-						<div>
-							<h4>Oakwood Library:</h4>
-							<p>Created a more comfortable reading environment for students and researchers.</p>
-						</div>
-						<div>
-							<h4>Atlas Coworking Space:</h4>
-							<p>Helped provide healthier workspaces for freelancers, startups, and remote workers.</p>
-						</div>
-						<div>
-							<h4>Lumina Creative Studio:</h4>
-							<p>Designed a modern office equipped with ergonomic seating for designers and artists.</p>
-						</div>
-					</section>
-
+					<img class="logo" src="./assets/icons/partners/novatech-solutions.svg">
+					<img class="logo" src="./assets/icons/partners/horizon-real-estate.svg">
+					<img class="logo" src="./assets/icons/partners/brightmind-university.svg">
+					<img class="logo" src="./assets/icons/partners/oakwood-library.svg">
+					<img class="logo" src="./assets/icons/partners/atlas-coworking-space.svg">
+					<img class="logo" src="./assets/icons/partners/lumina-creative-studio.svg">
 				</section>
 			</section>
 
+			<!--=====Trusted================================-->
 			<section class="trusted">
 				<h2>Trusted by:</h2>
 				<section>
@@ -258,8 +356,10 @@
 			</section>
 
 		</main>
-		<footer>
 
+			<!--=====Footer================================-->
+		<footer>
+			<!--++++++++++ligne one++++++++++-->
 			<section class="ligne-one">
 				<section class="top">
 					<div>
@@ -298,19 +398,20 @@
 				</section>
 			</section>
 
+			<!--++++++++ligne tew+++++++++-->
 			<nav class="ligne-tew">
 				<a target="_blank" href="https://instagram.com/sit"><img class="icon" alt="Instagram" src="/assets/icons/instagram.svg"></a>
 				<a target="_blank" href="https://linkedin.com/sit"><img class="icon" alt="LinkedIn" src="/assets/icons/linkedin.svg"></a>
 				<a target="_blank" href="https://facebook.com/sit"><img class="icon" alt="Facebook" src="/assets/icons/facebook.svg"></a>
 				<a target="_blank" href="https://X.com/sit"><img class="icon" alt="X" src="/assets/icons/x.svg"></a>
 			</nav>
-
+			<!--++++++++ligne tree++++++++-->
 			<section class="ligne-tree">
 				<p>© 2026 SIT Company. All rights reserved.</p>
 			</section>
 		</footer>
 
-	<script src="./script.js"></script>
+		<script src="./script.js"></script>
 
 	</body>
 </html>
