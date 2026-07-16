@@ -3,7 +3,7 @@
 }
 
 footer {
-	padding-bottom: clamp(1rem, 15vw, 3rem);
+/*	padding-bottom: clamp(1rem, 15vw, 3rem);*/
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;

@@ -14,6 +14,7 @@
 	justify-content: space-around;
 	gap: clamp(12px, 1.5vw, 30px); 
 	transition: transform .4s;
+	width: 100%;
 	
 }
 
@@ -21,6 +22,7 @@
 	display: flex;
 	overflow: hidden;
 	border: 1px solid black;
+	width: 100%;
 
 }
 
