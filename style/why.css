@@ -1,9 +1,14 @@
-
 .why {
+	padding-block: 3rem;
 	display:flex;
 	flex-direction: column;
-	gap: max(1rem, 5vw, 8rem);
+	gap: clamp(1rem, 4vw, 4rem);
 	text-align: center;
+}
+
+.why h2.section-title {
+	color: var(--text-color);
+	font-family: var(--heading-font);
 }
 
 .why section {
@@ -15,12 +20,40 @@
 }
 
 .why section .card {
-	display: inline-flex;
-	font-size: 1.5rem;
 	padding: 1rem;
 	gap: clamp(0rem, 3vw, 3rem)
+
+	flex: 0 0 clamp(calc(2 * var(--card-imag-width)), 18%, 25rem);
+	min-height: clamp(3rem, 25vw, 50rem);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	background: var(--surface-color);
+	border: 1px solid var(--border-color);
+	border-radius: var(--border-radius);
+	box-shadow: var(--shadow);
 }
 
-.why .title {
-	font-size: 1.5rem;
+.why section .card img.icon {
+	min-width: 60px;
+}
+
+.why section .card h3.title {
+	color: var(--accent-color);
+	font-family: var(--body-font);
+	padding-block: .7rem;
+}
+
+.why section .card p.discription {
+	color: var(--text-color);
+	font-family: var(--body-font);
+
+	text-align: center;
+	
+	padding-block: .4rem;
+	max-width: 300px;
+	
 }

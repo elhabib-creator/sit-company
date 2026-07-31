@@ -9,7 +9,6 @@
 	display: flex;
 	min-height: calc(100vh - var(--header-height));
 	align-items: stretch;
-	background-color: var(--hero-background-color);
 	padding-inline: 5%;
 }
 
@@ -21,8 +20,6 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	gap: 7vh;
-	padding-block: 5vh 5vh;
 }
 
 .hero .left .sub-title {
@@ -31,29 +28,56 @@
 	letter-spacing:.05em;
 
 	text-transform: capitalize;
+
+	padding: 1rem;	
 }
 
 .hero .left .title {
 	color: var(--primary-color);
 	font-size:var(--hero-title-font-size);
 	font-weight: 700;
+
+	padding: 0.2rem;
 }
 
 .hero .left .cta-container {
 	display: flex;
 	flex-direction: column ;
 	gap: 1vh;
+
+	padding: 0.5rem;
+}
+
+.hero .left .cta-container .top {
+	gap: 0.4rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .hero .left .cta-container .top .shop {
 	color: var(--text-color);
+	font-size: calc(var(--header-font-size) * 1.1);
 	font-family: var(--heading-font);
 
 	background-color: var(--accent-color);
+
+	padding: 1em 1.8em;
+	border: 1px solid var(--primary-color);
+	border-radius: 0.5em;
+
+	max-height: calc(var(--header-height) * 0.8);
+
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+	transition: all 100ms ease 100ms;
 }
 
-.hero .left .cta-container .top .contact:hover {
-	background-color: var(--accent-color);
+.hero .left .cta-container .top .shop:hover {
+	transform: scale(1.02);
+	border: black solid 1px;
 }
 
 .hero .left .cta-container .top .contact {
@@ -61,10 +85,27 @@
 	font-family: var(--heading-font);
 
 	border-color: var(--accent-color);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(var(--header-font-size) * 1.1);
+	padding: 1em 1.8em;
+	border: 1px solid var(--primary-color);
+	border-radius: 0.5em;
+	max-height: calc(var(--header-height) * 0.8);
+}
+
+.hero .left .cta-container .top .contact:hover {
+	color: white;
+
+	transform: scale(1.02);
+	background-color: black;
+	border: black solid 1px;
 }
 
 .hero .left .cta-container .bottom .slogan {
 	color: var(--muted-color);
+	font-size: 0.9rem;
 	font-family: var(--body-font);
 }
 /*=======hero-right===========*/
@@ -79,6 +120,7 @@
 		flex: 1;
 		text-align: center;
 		align-items: center;
+		max-height: 78vh;
 	}
 	.cta-container > .cta {
 		display: flex;

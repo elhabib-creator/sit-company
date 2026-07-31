@@ -1,5 +1,7 @@
 :root {
-	a-background-color: #0F172A;
+	--footer-background-color: var(--ink);
+	--footer-text-color: var(--paper);
+
 }
 
 footer {
@@ -8,25 +10,31 @@ footer {
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: stretch;
-	border-top: 1px black solid;
+	background-color: var(--footer-background-color);
+	border-top: 1px var(--border-color) solid;
+	padding-bottom: 1rem;
+	padding-inline: 1rem;
+
+	color: var(--footer-text-color);
 
 	transition: all .3s ease;
 }
 
+
 footer a:hover {
-	background-color: #f2f2f2;
+	background-color: var(--accent-color);
 	transform: translateY(-1px) scale(1.03);
+	border-radius: 5px;
 }
 
-footer 
-footer .ligne-one {
+footer .row-one {
 	padding-bottom: clamp(0.5rem, 7vw, 1.5rem);
 	display: flex;
-	flex-flow:f nowrap column;
+	flex-flow: nowrap column;
 	align-items: stretch;
 }
 
-footer .ligne-one .top {
+footer .row-one .top {
 	padding-block: clamp(0.33rem, 4vw, 1rem) clamp(0.5rem, 7vw, 1.5rem);
 	padding-inline: clamp(0.5rem, 7vw, 1.5rem);
 	flex: 0 0 100%;
@@ -35,53 +43,150 @@ footer .ligne-one .top {
 	justify-content: space-around;
 	gap: 0.5rem;
 	align-items: flex-start;
-	border-bottom: 1px gray solid;
 }
 
-@media (max-width: 800px) {
-	.footer .ligne-one .top {
-		flex-wrap: wrap;
-	}
-}
-footer .ligne-one .top > * {
+footer .row-one .top .column {
 	display: flex;
 	flex-flow: nowrap column;
 }
-footer .ligne-one .top div {
-	padding: 0.3em;
-}
-footer .ligne-one .top img {
-	max-width:45px;
-	max-height: 45px;
+
+footer .row-one .top .column img.brand-LOGO {
+	width: 3rem;
+	filter: invert(1);
+	aspect-ratio: 3/3;
 }
 
-footer .ligne-one .bottom {
-	padding-block: clamp(0.5rem, 7vw, 1.5rem);
+footer .row-one .top .column p.slogan {
+	opacity: 80%;
+}
+
+footer .row-one .top .column h3 {
+	font-family: var(--heading-font);
+	opacity: 65%;
+
+	margin-bottom: .4rem;
+}
+
+footer .row-one .top .column a {
+	padding: 0.4rem;
+	
+}
+
+footer .row-one .bottom h3.title {
+	font-family: var(--heading-font);
+	font-weight: normal;
+
+	text-transform: capitalize;
+
+	padding: .4rem;
+}
+
+footer .row-one .bottom h3.title::after {
+	content: "";
+	display: inline-block;
+	width: 1.3rem;
+	height: 1.3rem;
+	margin-left: .5rem;
+	background-color: currentColor;
+	-webkit-mask: url(../assets/icons/newspaper.svg) no-repeat center / contain;
+	mask: url(../assets/icons/newspaper.svg) no-repeat center / contain;
+}
+
+footer .row-one .bottom p.paragraphe {
+	font-family: var(--body-font);
+	opacity: 90%;
+
+	padding: .3rem;
+}
+
+footer .row-one .bottom div {
 	display: flex;
-	flex-direction: column;
-	border-bottom: 1px solid gray;
+	gap: 8px;
 }
 
-.ligne-tew {
-	padding-block: clamp(0.5rem, 7vw, 1.5rem);
-	padding-inline: clamp(0.5rem, 7vw, 1.5rem);
+footer .row-one .bottom input {
+	background-color: var(--background-color);
+	color: var(--primary-color);
+	
+	border-radius: .3rem;
+
+	text-align: center;
+}
+
+footer .row-one .bottom button {
+	padding: .5rem;
+	border-radius: .3rem;
+	background-color: var(--accent-color);
+	color: var(--primary-color);
+	font-weight: bold;
+}
+
+footer .row-two {
+	padding: 0 1rem 1rem 1rem;
 	display: flex;
 	justify-content: flex-end;
-	gap: max(3vw, 0.5rem);
-	border-bottom: 1px gray solid;
+	gap: 1rem;
 }
 
-footer .ligne-tew .icon {
-	height: 35px;
-	width: 35px;
+footer .row-two a img.icon {
+	width: 2rem;
+	height: 2rem;
+	filter: invert(1);
 }
 
-footer .ligne-tree {
-	padding-block: clamp(0.5rem, 7vw, 1.5rem);
-	justify-self: flex-end;
+footer .row-tree p {
+	font-size: .85rem;
+	font-family: var(--mono-font);
+	opacity: 80%;
+	text-align: center;
 }
 
-footer > *:not(.ligne-one),
-.ligne-one .bottom {
-	padding-left: 5%;
+@media (max-width: 800px) {
+	footer .row-one .top {
+		flex-wrap: wrap;
+	}
+
+	footer .row-one .top > * {
+		display: flex;
+		flex-flow: nowrap column;
+	}
+
+	footer .row-one .top div {
+		padding: 0.3em;
+	}
+
+	footer .row-one .top img {
+		max-width:45px;
+		max-height: 45px;
+	}	
+
+	footer .row-one .bottom {
+		padding-block: clamp(0.5rem, 7vw, 1.5rem);
+		display: flex;
+		flex-direction: column;
+		border-bottom: 1px solid gray;
+	}
+
+	footer .row-two {
+		padding-block: clamp(0.5rem, 7vw, 1.5rem);
+		padding-inline: clamp(0.5rem, 7vw, 1.5rem);
+		display: flex;
+		justify-content: flex-end;
+		gap: max(3vw, 0.5rem);
+		border-bottom: 1px gray solid;
+	}
+
+	footer .row-two .icon {
+		height: 35px !important;
+		width: 35px !important;
+	}
+
+	footer .row-tree {
+		padding-block: clamp(0.5rem, 7vw, 1.5rem);
+	}
+
+	footer > *:not(.row-one),
+	.row-one .bottom {
+		padding-left: 5%;
+	}
 }

@@ -1,7 +1,6 @@
 /*====================Header====================*/
 :root {
 	--header-font-size: clamp(0.9rem, 1vw, 1.4rem)
-	--header-background-color: white;
 	--header-border-bottom-color: #E5E7EB;
 }
 a { 
@@ -13,14 +12,12 @@ header {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: 100vw;
 	height: var(--header-height);
-	border: 1px solid rgb(255 255 255 / 20%);
-	background: var(--header-background-color);
+	min-height: fit-content;
 	backdrop-filter: blur(20px);
 	-webkit-backdrop-filter: blur(20px);
 	z-index: 1000;
-	border-bottom:1px solid var(--header-border-bottom-color);
 
 	display: flex;
 	justify-content: space-between;
@@ -31,56 +28,63 @@ header {
 	gap: 1rem;
 }
 
-.left-part,
-.center-part {
+header .left-part-t,
+header .center-part {
 	flex: 1 1 20%;
 	font-size: var(--header-font-size);
 }
 
 /*===========Left Part============*/
-.left-part-t {
+header .left-part-t {
 	display: flex;
 	align-items: center;
 }
 
-.left-part {
+header .left-part-t .left-part {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
-.c-name {
+header .left-part-t .left-part .c-name {
+	font-family: var(--heading-font);
 	font-size: calc(var(--header-font-size) * 1.6);
 	font-weight: 700;
+	color: var(--text-color);
 }
 
-.slogan {
+header .left-part-t .left-part .slogan {
+	font-family: var(--text-font);
+	color: var(--muted-color);
 	font-size: calc(var(--header-font-size) * 0.9);
-	opacity: 0.8;
 }
 
 /*=========Center Part===========*/
-.center-part {
+header .center-part {
 	display: flex;
 	justify-content: space-around;
 	gap: 0.3rem;
 	align-items: center;
 }
 
-.center-part a {
-	font-size: inherit;
+header .center-part a {
+	color: var(--text-color);
+	font-size: var(--body-font);
 	font-weight: 500;
+
 	padding: 1em clamp(0.25em, 1.5vw, 1.8em);
 	border-radius: 0.2em;
 }
 
-.center-part a:hover,
-.center-part a.active {
+header .center-part a:hover,
+header .center-part a.active {
+	color: var(--accent-color);
+
 	background: rgb(255 255 255 / 35%);
 }
 
 /*=======Right Part==========*/
-.right-part {
+header .right-part {
 	flex: 1 1 20%;
 	display: flex;
 	justify-content: flex-end;
@@ -88,8 +92,8 @@ header {
 	gap: 1rem;
 }
 
-.shop,
-.contact {
+header .right-part .shop,
+header .right-part .contact {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
@@ -99,60 +103,74 @@ header {
 	max-height: calc(var(--header-height) * 0.8);
 }
 
-.contact {
-	border: currentColor solid 1px;
-	transition: background 200ms ease 200ms, color 200ms ease 200ms;
+header .right-part .shop {
+	color: var(--primery-color);
+	font-weight: 600;
+
+	background: var(--accent-color);
+
+	transition: all 200ms ease 200ms;
 }
-.contact:hover {
-	background: black;
+
+header .right-part .contact {
+	border: currentColor solid 1px;
+
+	transition: all 200ms ease 200ms;
+}
+
+/*---hover---*/
+header .right-part a.shop:hover {
+	transform: scale(1.02);
+	outline: 1px solid black;
+}
+
+header .right-part a.contact:hover {
+	transform: scale(1.02);
+
 	color: white;
+
+	background-color: black;
 	border: black solid 1px;
 }
 
-.shop {
-	background: #2563EB;
-	color: white;
-	font-weight: 600;
-	transition: transform 200ms ease 200ms;
-}
-.shop:hover {
-	transform: scale(1.02);
-}
-
-/*===========Responsive========*/
+/*---Responsive---*/
 @media (max-width: 940px) {
-	.center-part {
+	header .center-part {
 		display: none;
 	}
-	.left-part {
+
+	header .left-part-t {
 		flex: 1;
 	}
-	.right-part {
+
+	header .right-part {
 		flex: 0 0 auto;
 	}
-
 }
 
-@media (max-width: 600px) {
-	.contact {
+@media (max-width: 700px) {
+	header .right-part .contact {
 		display: none;
 	}
 }
 
 @media (max-width: 400px) {
-	.shop {
+	header .right-part a.shop {
 		flex-shrink: 1;
 		padding: 15% 10%;
 		font-size: clamp(0.7rem, 5vw, 999px);
 	}
-	.c-name {
+
+	header .left-part-t .left-part p.c-name {
 		flex-shrink: 1;
 		font-size: clamp(0.75rem, 5.5vw, 999px);
 	}
-	.slogan {
+
+	header .left-part-t .left-part p.slogan {
 		font-size: clamp(0.56rem, 4vw, 999px);
 		white-space: normal;
 	}
+
 	header {
 		gap: 2rem;
 	}

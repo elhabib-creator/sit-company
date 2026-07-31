@@ -22,6 +22,12 @@ a {
 	--line: #DCD5C7;          /* hairline borders/dividers */
  
 	/*Aliases kept so every section stylesheet below still resolves correctly*/
+	/*font-family*/ 
+	--heading-font: 'Fraunces', serif;
+	--body-font: 'Inter', sans-serif;
+	--mono-font: 'IBM Plex Mono', monospace;
+
+	/*color*/
 	--primary-color: var(--ink);
 	--secondary-color: var(--chart-blue);
 	--accent-color: var(--spine-gold);
@@ -30,20 +36,17 @@ a {
 	--text-color: var(--ink);
 	--muted-color: #6B6156;
 	--border-color: var(--line);
- 
+
+  
 	--shadow: 0 10px 40px rgba(30,43,47,.08);
- 
-	--heading-font: 'Fraunces', serif;
-	--body-font: 'Inter', sans-serif;
-	--mono-font: 'IBM Plex Mono', monospace;
- 
+
 	--border-radius: 14px;
+	
 }
 
 body {
 	padding-top: var(--header-height);
 	background: var(--background-color);
-	min-width: 250px;
 }
 
 /*============================main===============================*/

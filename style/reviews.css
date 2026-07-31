@@ -4,32 +4,79 @@
 	flex-direction: column;
 	align-items: center;
 	gap: 4vw;
-	height: 70%;
+}
+
+.reviews > h2.section-title {
+	color: var(--text-color);
+	font-family: var(--heading-font);
+
+	padding: clamp(20px, 0.02vw, 50px);
 }
 
 .reviews .container {
 	width: 100%;
 	display: flex;
-	flex-flow: row wrap;
+	flex-wrap: wrap;
 	gap: 2vw;
 	align-items: center;
 	justify-content: center;
 	margin-inline: 2rem;
 	padding-inline: 2rem;
+	scroll-snap-type: x mandatory;
+	scrollbar-width: none;
+}
+
+.reviews .container::-webkit-scrollbar {
+	display: none;
 }
 
 .reviews .container .card {
-	min-width: 30rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
 	padding: 2rem;
-	background-color: var(--surface-color)
+	background-color: var(--surface-color);
+
+	width: 360px;
+	max-width: 85vw;
+	flex-shrink: 0;
+	border-radius: var(--border-radius);
+	scroll-snap-align: center;
+}
+
+.reviews .container .card .star-rating .star {
+	background: var(--accent-color);
+
+	mask-image: url(../assets/icons/star.svg);
+	webkit-mask-image: url(../assets/icons/star.svg);
+	mask-size: contain;
+	mask-origin: padding-box;
+	mask-repeat: no-repeat;
+
+	max-width: 200px;
+}
+
+.reviews .container .card .quote {
+	color: var(--secondary-color);
+	font-family: var(--body-font);
+	font-style: italic;
 }
 
 .reviews .container .card .avatar {
-	height: 4rem;
+	min-height: 4rem;
 	aspect-ratio: 1;
 }
 
+.reviews .container .card h4.name {
+	color: var(--primary-color);
+	font-family: var(--heading-font);
+}
+
+@media (max-width:700px) {
+	.reviews .container {
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		justify-content: flex-start;
+	}
+}
