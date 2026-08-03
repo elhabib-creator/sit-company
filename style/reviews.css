@@ -30,6 +30,11 @@
 	display: none;
 }
 
+.reviews .container button.prev ,
+.reviews .container button.next {
+	display: none;
+}
+
 .reviews .container .card {
 	display: flex;
 	flex-direction: column;
@@ -42,7 +47,7 @@
 	max-width: 85vw;
 	flex-shrink: 0;
 	border-radius: var(--border-radius);
-	scroll-snap-align: center;
+	scroll-snap-align: start;
 }
 
 .reviews .container .card .star-rating .star {
@@ -78,5 +83,6 @@
 		flex-wrap: nowrap;
 		overflow-x: auto;
 		justify-content: flex-start;
+		padding-inline: 1rem;
 	}
 }

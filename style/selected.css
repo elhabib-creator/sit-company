@@ -24,16 +24,16 @@
 	justify-content: space-around;
 	gap: clamp(12px, 1.5vw, 30px); 
 	transition: transform .4s;
-	width: 100%;
-	overflow: auto;
-	scroll-snap-type: x mandatory;
-	scrollbar-width: none;
 
 }
 
 .selected .slider .viewport {
 	display: flex;
 	width: 100%;
+    	overflow-x: auto;
+    	overflow-y: hidden;
+    	scroll-snap-type: x mandatory;
+    	scrollbar-width: none;
 }
 
 .selected .slider .viewport .track .product {
@@ -103,6 +103,11 @@
 .selected .slider button.prev:hover,
 .selected .slider button.next:hover {
 	background: var(--accent-color);
+}
+
+.selected .slider button:disabled {
+	opacity: .3;
+	cursor: not-allowed;
 }
 
 .selected .slider .prev {

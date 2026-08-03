@@ -3,50 +3,83 @@ const viewport = document.querySelector(".viewport");
 const nextButton = document.querySelector(".next");
 const prevButton = document.querySelector(".prev");
 
-const products = document.querySelectorAll(".product");
+// Move 30% of the visible viewport every click
+const STEP = 0.3;
 
-let current = 0;
+function updateButtons() {
 
-const cardWidth = 300;
-const gap = 30;
-const move = cardWidth + gap;
+    const maxPosition =
+        viewport.scrollWidth - viewport.clientWidth;
 
-const visibleCards = 3;
+    if (viewport.scrollLeft <= 0) {
 
-const maxSlide = products.length - visibleCards;
+        prevButton.disabled = true;
+
+    } else {
+
+        prevButton.disabled = false;
+
+    }
+
+    if (viewport.scrollLeft >= maxPosition) {
+
+        nextButton.disabled = true;
+
+    } else {
+
+        nextButton.disabled = false;
+
+    }
+
+}
 
 nextButton.addEventListener("click", function () {
 
-    if (current < maxSlide) {
+    const step = viewport.clientWidth * STEP;
 
-        current++;
+    const maxPosition =
+        viewport.scrollWidth - viewport.clientWidth;
 
-        viewport.scrollTo({
+    let position = viewport.scrollLeft + step;
 
-            left: current * move,
+    if (position > maxPosition) {
 
-            behavior: "smooth"
-
-        });
+        position = maxPosition;
 
     }
+
+    viewport.scrollTo({
+
+        left: position,
+
+        behavior: "smooth"
+
+    });
 
 });
 
 prevButton.addEventListener("click", function () {
 
-    if (current > 0) {
+    const step = viewport.clientWidth * STEP;
 
-        current--;
+    let position = viewport.scrollLeft - step;
 
-        viewport.scrollTo({
+    if (position < 0) {
 
-            left: current * move,
-
-            behavior: "smooth"
-
-        });
+        position = 0;
 
     }
 
+    viewport.scrollTo({
+
+        left: position,
+
+        behavior: "smooth"
+
+    });
+
 });
+
+viewport.addEventListener("scroll", updateButtons);
+
+updateButtons();
