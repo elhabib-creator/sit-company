@@ -70,6 +70,7 @@
 .selected .slider .viewport .track .product p.product-name {
 	color: var(--text-color);
 	font-family: var(--heading-font);
+	text-wrap: nowrap;
 }
 
 /*this element is not added yet in the html*/
