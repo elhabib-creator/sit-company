@@ -13,7 +13,7 @@ a {
 	/*Header*/
 	--header-height: clamp( 65px ,8vh, 80px);
  
-	/*Color system — warm, clinical-but-comfortable, built around the spine/posture motif*/
+	/*Color Identity — warm, clinical-but-comfortable, built around the spine/posture motif*/
 	--ink: #1E2B2F;           /* headings & body text */
 	--paper: #FAF8F4;         /* base background */
 	--mist: #EDE7DC;          /* alternating section bg, card surfaces */
@@ -27,7 +27,7 @@ a {
 	--body-font: 'Inter', sans-serif;
 	--mono-font: 'IBM Plex Mono', monospace;
 
-	/*color*/
+	/*Semantic Color*/
 	--primary-color: var(--ink);
 	--secondary-color: var(--chart-blue);
 	--accent-color: var(--spine-gold);
