@@ -37,6 +37,8 @@
 	--paper: #FAF8F4; 
 	--mist: #EDE7DC; 
 	--spine-gold: #B8722E; 
+    --sping-gold-lighter: #E58A31;
+    --sping-gold-darker: #8F5701;
 	--chart-blue: #34505A; 
 	--line: #DCD5C7; 
 	--header-border-bottom-color: #E5E7EB;
@@ -52,6 +54,8 @@
 	--primary-color: var(--ink);
 	--secondary-color: var(--chart-blue);
 	--accent-color: var(--spine-gold);
+    --accent-color-lighter: var(--sping-gold-lighter);
+    --accent-color-darker: var(--sping-gold-darker);
 	--background-color: var(--paper);
 	--surface-color: #FFFFFF;
 	--text-color: var(--ink);
@@ -139,7 +143,7 @@ input:focus-visible {
 }
 
 .demo-banner a {
-	color: var(--spine-gold);
+	color: var(--sping-gold-lighter);
 	font-weight: 600;
 	text-decoration: underline;
 	text-underline-offset: 2px;
@@ -274,7 +278,7 @@ header .right-part .contact {
 header .right-part .shop {
 	color: var(--primary-color);
 	font-weight: 600;
-	background: var(--accent-color);
+	background: var(--accent-color-lighter);
 	transition: all 200ms ease 200ms;
 }
 
@@ -387,7 +391,7 @@ header .right-part a.contact:hover {
 	color: var(--text-color);
 	font-size: calc(var(--header-font-size) * 1.1);
 	font-family: var(--heading-font);
-	background-color: var(--accent-color);
+	background-color: var(--accent-color-lighter);
 	padding: 1em 1.8em;
 	border: 1px solid var(--primary-color);
 	border-radius: 0.5em;
@@ -716,14 +720,14 @@ header .right-part a.contact:hover {
 	min-width: 270px;
 }
 
-.recommended > section > .column > div > h4.name {
+.recommended > section > .column > div > h3.name {
 	color: var(--text-color);
 	font-family: var(--heading-font);
 	position: relative;
 	padding-left: 0.9rem;
 }
 
-.recommended > section > .column > div > h4.name::before {
+.recommended > section > .column > div > h3.name::before {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -817,7 +821,7 @@ header .right-part a.contact:hover {
     height:35px;
 }
 
-.reviews .container .card h4.name {
+.reviews .container .card h3.name {
 	color: var(--primary-color);
 	font-family: var(--heading-font);
 }
@@ -931,7 +935,7 @@ header .right-part a.contact:hover {
 }
 
 .case-study p a {
-    color: var(--accent-color);
+    color: var(--accent-color-darker);
     text-decoration: underline;
     transition: 20ms ease;
     display: inline-block;
@@ -1092,7 +1096,7 @@ footer .row-one .bottom input {
 footer .row-one .bottom button {
 	padding: .5rem;
 	border-radius: .3rem;
-	background-color: var(--accent-color);
+	background-color: var(--accent-color-lighter);
 	color: var(--primary-color);
 	font-weight: bold;
 }
