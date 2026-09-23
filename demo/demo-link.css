@@ -1,0 +1,145 @@
+@font-face {
+    font-family: "Fraunces";
+    src: url("/fonts/Fraunces/"Fraunces-VariableFont_SOFT,WONK,opsz,wght.woff2) format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter/"Inter-VariableFont_opsz,wght.woff2) format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter/"Inter-Italic-VariableFont_opsz,wght.woff2) format("woff2");
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+:root {
+	--ink: #17140F;
+	--paper: #F6F2EA;
+	--accent: #B8863B;
+	--muted: #6F6A5E;
+	--line: #E3DCCB;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--paper);
+	color: var(--ink);
+	min-height: 100vh;
+	font-family: 'Inter', -apple-system, sans-serif;
+}
+
+.demo-link {
+	max-width: 640px;
+	margin-inline: auto;
+	padding: 12vh 1.5rem 10vh;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.brand {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	text-decoration: none;
+	color: var(--ink);
+	font-weight: 600;
+	margin-bottom: 6rem;
+}
+
+.brand img {
+	width: 24px;
+	height: 24px;
+}
+
+#dl-headline {
+	font-family: 'Fraunces', serif;
+	font-size: clamp(1.8rem, 4vw, 3rem);
+	font-weight: 520;
+	line-height: 1.15;
+	margin-bottom: 0.75rem;
+}
+
+.lede {
+	font-size: 1.1rem;
+	color: var(--muted);
+	margin-bottom: 2.5rem;
+}
+
+.explain {
+	font-size: 1rem;
+	line-height: 1.6;
+	max-width: 60ch;
+	margin-bottom: 3rem;
+}
+
+.actions {
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+
+.btn {
+	font-weight: 600;
+	font-size: 0.95rem;
+	padding: 0.9em 1.6em;
+	border-radius: 0.5em;
+	text-decoration: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	transition: background 200ms ease, transform 200ms ease, border-color 200ms ease;
+}
+
+.btn:focus-visible {
+	outline: 2px solid var(--accent);
+	outline-offset: 2px;
+}
+
+.btn.primary {
+	background: var(--ink);
+	color: var(--paper);
+}
+
+.btn.primary:hover {
+	transform: scale(1.02);
+}
+
+.btn.secondary {
+	background: transparent;
+	color: var(--ink);
+	border: 1px solid var(--line);
+}
+
+.btn.secondary:hover {
+	border-color: var(--ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.btn {
+		transition: none;
+	}
+}
+
+@media (max-width: 480px) {
+	.actions {
+		flex-direction: column;
+		width: 100%;
+	}
+	.btn {
+		width: 100%;
+	}
+}

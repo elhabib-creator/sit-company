@@ -1,0 +1,105 @@
+.page-notice {
+	min-height: calc(100vh - var(--header-height));
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	gap: 2.5vh;
+	padding-inline: 5%;
+	background: var(--hero-background);
+}
+
+.page-notice .crumb {
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	opacity: 0.55;
+	font-size: var(--font-size);
+}
+
+.page-notice h1 {
+	font-size: var(--hero-title-font-size);
+	font-weight: 700;
+	line-height: 1.1;
+	max-width: 20ch;
+}
+
+.page-notice .lede {
+	font-size: 1.15rem;
+	opacity: 0.75;
+	max-width: 50ch;
+}
+
+.page-notice .explain {
+	font-size: 1rem;
+	line-height: 1.6;
+	max-width: 60ch;
+	opacity: 0.85;
+}
+
+.page-notice .actions {
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 1vh;
+}
+
+.page-notice .actions .shop {
+    background: var(--ink);
+    color: var(--paper);
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.9em 1.6em;
+    border-radius: 0.5em;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 200ms ease, transform 200ms ease, border-color 200ms ease;
+}
+
+.page-notice .actions .shop:hover {
+    transform: scale(1.02);
+}
+
+.page-notice .actions .contact {
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.9em 1.6em;
+    border-radius: 0.5em;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 200ms ease, transform 200ms ease, border-color 200ms ease;
+    background: transparent;
+    color: var(--ink);
+    border: 1px solid var(--line);
+}
+
+.page-notice .actions .contact:hover {
+    border-color: var(--ink);
+}
+
+@media (max-width: 480px){
+}
+
+.logo-link {
+	display: inline-flex;
+	align-items: center;
+}
+
+@media (max-width: 480px) {
+	.page-notice .actions {
+		flex-direction: column;
+		width: 100%;
+	}
+	.page-notice .actions a {
+		width: 100%;
+	}
+    .page-notice .actions .shop ,
+    .page-notice .actions .contact {
+        width: 100%;
+    }
+}
