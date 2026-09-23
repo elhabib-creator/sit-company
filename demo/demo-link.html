@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Not a real page — SIT</title>
+		<meta name="description" content="This link is part of a fictional portfolio project by El Habib H., demonstrating frontend development and SEO skills.">
+		<meta name="robots" content="noindex, nofollow">
+		<link rel="stylesheet" href="demo-link.css">
+	</head>
+	<body>
+		<main class="demo-link">
+			<a class="brand" href="/index.html">
+				<img src="/assets/icons/logo.svg" alt="">
+				<span>SIT</span>
+			</a>
+
+			<h1 id="dl-headline">This page doesn't exist.</h1>
+			<p id="dl-subline" class="lede">Not because of an error — by design.</p>
+
+			<p class="explain">
+				SIT is a fictional ergonomic-chair company, built by <strong>El Habib H.</strong> as a portfolio piece to demonstrate real frontend development and on-page SEO work. This particular link was part of the illusion — glad it looked convincing enough to click.
+			</p>
+
+			<div class="actions">
+				<a class="btn primary" href="https://www.upwork.com/freelancers/~01af3ead7831321b86" target="_blank">Hire me on Upwork</a>
+				<a class="btn secondary" href="/index.html">Back to SIT</a>
+			</div>
+		</main>
+
+		<script>
+			const PLATFORMS = {
+				instagram: { name: "Instagram", noun: "account" },
+				linkedin:  { name: "LinkedIn",  noun: "page" },
+				facebook:  { name: "Facebook",  noun: "page" },
+				x:         { name: "X",         noun: "account" },
+				twitter:   { name: "X",         noun: "account" }
+			};
+
+			const params = new URLSearchParams(window.location.search);
+			const platform = PLATFORMS[(params.get("from") || "").toLowerCase()];
+
+			if (platform) {
+				document.getElementById("dl-headline").textContent =
+					`This ${platform.name} ${platform.noun} doesn't exist.`;
+				document.getElementById("dl-subline").textContent =
+					"SIT never had one — not for real, anyway.";
+			}
+		</script>
+	</body>
+</html>

@@ -1,53 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
         
-        <link rel="icon" type="image/x-icon" href="/favicon.ico">
-        <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon/favicon-16x16.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon/favicon-32x32.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/favicon/android-chrome-192x192.png">
+        <link rel="icon" type="image/x-icon" href="./assets/icons/favicon/favicon.ico">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon/favicon-32x32.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="./assets/icons/favicon/android-chrome-192x192.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="./assets/icons/favicon/android-chrome-512x512.png">
                       
 		<title>SIT Company</title>
 		<meta name="description" content="Ergonomic chairs designed to keep you comfortable, productive, and free from back pain." />
 
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-        <!--
-		<link rel="stylesheet" href="style/base.css">
-		<link rel="stylesheet" href="style/header.css">
-		<link rel="stylesheet" href="style/hero.css">
-		<link rel="stylesheet" href="style/why.css">
-		<link rel="stylesheet" href="style/examples.css">
-		<link rel="stylesheet" href="style/recommended.css">
-		<link rel="stylesheet" href="style/reviews.css">	
-		<link rel="stylesheet" href="style/trusted.css">	
-		<link rel="stylesheet" href="style/partners.css">	
-		<link rel="stylesheet" href="style/selected.css">	
-		<link rel="stylesheet" href="style/footer.css">
-        -->
-        <link rel="stylesheet" href="/main.css">
+        <link rel="canonical" href="https://sit-company.pages.dev/">
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                    "@type": "Organization",
+                    "name": "SIT Company",
+                    "url": "https://sit-company.pages.dev/",
+                    "logo": "https://sit-company.pages.dev/assets/icons/logo.svg",
+                    "description": "Ergonomic chairs designed to keep you comfortable, productive, and free from back pain."
+                },
+                { "@type": "Product", "name": "Prestige Executive Chair", "offers": { "@type": "Offer", "price": "319", "priceCurrency": "USD", "availability": "https://schema.org/InStock" } },
+                { "@type": "Product", "name": "Harmony Conference Chair", "offers": { "@type": "Offer", "price": "499", "priceCurrency": "USD", "availability": "https://schema.org/InStock" } },
+                { "@type": "Product", "name": "Titan Gaming Chair", "offers": { "@type": "Offer", "price": "299", "priceCurrency": "USD", "availability": "https://schema.org/InStock" } },
+                { "@type": "Product", "name": "Nova Ergonomic Chair", "offers": { "@type": "Offer", "price": "419", "priceCurrency": "USD", "availability": "https://schema.org/InStock" } },
+                { "@type": "Product", "name": "Apex Office Chair", "offers": { "@type": "Offer", "price": "999", "priceCurrency": "USD", "availability": "https://schema.org/InStock" } },
+                { "@type": "Product", "name": "Focus Study Chair", "offers": { "@type": "Offer", "price": "249", "priceCurrency": "USD", "availability": "https://schema.org/InStock" } }
+  ]
+}
+        </script>
+        <link rel="stylesheet" href="./main.css">
 	</head>
-
 	<body>
 
-<!-- ======== Demo Banner ======== -->
-<div class="demo-banner">
-    <div class="container">
-		<p>
-		🔧 this is a demo project by <strong>El Habib H.</strong> – Casa Sevilla restrant is a fictional restrant used to showcase frontend devolopment &amp; SEO skills.
-		<a href="https://www.upwork.com/freelancers/~01af3ead7831321b86" target="_blank">Hire me on Upwork →</a>
-		</p>
-	</div>
-</div>
-		<!--======Header========================================-->
+        <!-- ======== Demo Banner ======== -->
+        <div class="demo-banner">
+            <div class="container">
+            	<p>
+		        🔧 this is a demo project by <strong>El Habib H.</strong> – SIT is a fictional company used to showcase frontend development &amp; SEO skills.
+                <a href="https://www.upwork.com/freelancers/~01af3ead7831321b86" target="_blank">Hire me on Upwork →</a>
+		        </p>
+            </div>
+        </div>
+
+        <!-- ======== Header ======== -->
 		<header>
 			<section class="left-part-t">
-				<img src="assets/icons/logo.svg" style="width: 30px; height: 30px;">
+				<img src="./assets/icons/logo.svg" alt="" style="width: 30px; height: 30px;">
 				<div class="left-part">
 					<p class="c-name">Sit company</p>
 					<p class="slogan">comfort, health &amp; enjoyment</p>
@@ -59,26 +64,26 @@
 				<a href="#reviews">Reviews</a>
 			</nav>
 			<section class="right-part">
-				<a class="contact" target="_blank" href="https://sit.com/contact-us">Request Consultation</a>
-				<a class="shop" target="_blank" href="https://sit.com/shop">Shop Now</a>
+				<a class="contact" href="./demo/demo-page.html?section=consultation">Request Consultation</a>
+				<a class="shop" href="./demo/demo-page.html?section=shop">Shop Now</a>
 			</section>
 		</header>
 
 		<main>
-		<!--=======Hero==================================-->
+        <!-- ======== Hero ======== -->
 		<section class="hero">
 			<div class="left">
-				<p class="sub-title">✓ Ergonomic Seating Solutions</p>
-				<p class="title">Ergonomic chairs designed for healthy work.</p>
+				<p class="sub-title">✓ ergonomic seating solutions</p>
+				<p class="title">ergonomic chairs designed for healthy work.</p>
 				<div class="cta-container">
 					<nav class="top">
-						<a class="shop" target="_blank" href="https://sit.com/shop">Shop now</a> 
-						<a class="contact" target="_blank" href="https://sit.com/contact-us">Request consultation</a>
+						<a class="shop" href="./demo/demo-page.html?section=shop">shop now</a> 
+						<a class="contact" href="./demo/demo-page.html?section=consultation">request consultation</a>
 					</nav>
 					<div class="bottom">
-						<p class="slogan">✓ 5-Year Warranty</p>
-						<p class="slogan">✓ Ergonomic Certified</p>
-						<p class="slogan">✓ Business Consultation</p>
+						<p class="slogan">✓ 5-year warranty</p>
+						<p class="slogan">✓ ergonomic certified</p>
+						<p class="slogan">✓ business consultation</p>
 					</div>
 				</div>
 			</div>
@@ -86,51 +91,51 @@
 			</div>
 		</section>
 
-			<!--=====Examples================================-->
-			<section class="examples">
+        <!-- ======== Examples ======== -->
+		<section class="examples">
 
-					<div class="card">
-						<img class="icon" src="./assets/icons/office.svg">
-						<p class="text">Office</p>
-					</div>
+			<div class="card">
+				<img class="icon" src="./assets/icons/office.svg" alt="">
+				<p class="text">Office</p>
+			</div>
 	
-					<div class="card">
-						<img class="icon" src="./assets/icons/meeting.svg">
-						<p class="text">Meeting Rooms</p>
-					</div>
+			<div class="card">
+		    	<img class="icon" src="./assets/icons/meeting.svg" alt="">
+				<p class="text">Meeting Rooms</p>
+			</div>
 
-					<div class="card">
-						<img class="icon" src="./assets/icons/gaming.svg">
-						<p class="text">Gaming</p>
-					</div>
+			<div class="card">
+				<img class="icon" src="./assets/icons/gaming.svg" alt="">
+				<p class="text">Gaming</p>
+			</div>
 	
-					<div class="card">
-						<img class="icon" src="./assets/icons/executive.svg">
-						<p class="text">Executive</p>
-					</div>
+			<div class="card">
+				<img class="icon" src="./assets/icons/executive.svg" alt="">
+				<p class="text">Executive</p>
+			</div>
 	
-					<div class="card">
-						<img class="icon" src="./assets/icons/education.svg">
-						<p class="text">Education</p>
-					</div>
-			</section>
+			<div class="card">
+				<img class="icon" src="./assets/icons/education.svg" alt="">
+				<p class="text">Education</p>
+			</div>
+		</section>
 
 			<!--=====Why================================-->
 			<section id="why" class="why">
 				<h2 class="section-title">Why our chairs:</h2>
 				<section>
 					<div class="card">
-						<img class="icon" src="./assets/icons/lumbar-support.svg">
+						<img class="icon" src="./assets/icons/lumbar-support.svg" alt="">
 						<h3 class="title">+ Lumbar support.</h3>
 						<p class="discription">Ergonomically shaped to maintain the natural curve of your spine and reduce fatigue during long working hours.</p>
 					</div>
 					<div class="card">
-						<img class="icon" src="./assets/icons/breathable-materials.svg">
+						<img class="icon" src="./assets/icons/breathable-materials.svg" alt="">
 						<h3 class="title">+ Breathable materials.</h3>
 						<p class="discription">Premium mesh and fabric improve airflow, helping you stay cool and comfortable throughout the day.</p>
 					</div>
 					<div class="card">
-						<img class="icon" src="./assets/icons/five-years-warranty.svg">
+						<img class="icon" src="./assets/icons/five-years-warranty.svg" alt="">
 						<h3 class="title">+ Five-years warranty.</h3>
 						<p class="discription">Built to last and backed by a comprehensive warranty that reflects our confidence in every chair.</p>
 					</div>
@@ -141,89 +146,89 @@
 			<section class="selected">
 				<h2 class="section-title">Selected products:</h2>
 				<section class="slider">
-					<button class="prev"></button>
+					<button class="prev" aria-label="Previous product"></button>
 					<section class="viewport">
 						<div class="track">
 							<div class="product">
-								<img class=product-img src="./assets/products/chair11.png" width="auto" height="200px" >
+								<img class="product-img" src="./assets/products/chair11.png" width="500" height="500" alt="Black leather executive chair with high back, padded armrests, and chrome base">
 								<p class="product-name">Prestige Executive Chair</p>
-								<div class="star-rating">
-									<span class="star"></span>
-									<span class="star"></span>
-									<span class="star"></span>
-									<span class="star"></span>
-									<span class="star"></span>
+								<div class="star-rating" aria-label="5 out of 5 stars">
+									<span class="star" aria-hidden="true"></span>
+									<span class="star" aria-hidden="true"></span>
+									<span class="star" aria-hidden="true"></span>
+									<span class="star" aria-hidden="true"></span>
+									<span class="star" aria-hidden="true"></span>
 								</div>
 								<p class="product-price">319$</p>
 
 							</div>
 							<div class="product">
-								<img class=product-img src="./assets/products/chair22.png" width="auto" height="200px" >
+								<img class="product-img" src="./assets/products/chair22.png" width="500" height="500" alt="Dark grey office chair with a slightly mesh backrest, padded T-shaped armrests detached from the backrest, height-adjustable gas lift, and a matching grey five-point base">
 								<p class="product-name">Harmony Conference Chair</p>
-								<div class="star-rating">
-									<span class="star"></span>
-									<span class="star"></span>
-									<span class="star"></span>
-									<span class="star"></span>
-									<span class="star"></span>
+								<div class="star-rating" aria-label="5 out of 5 stars">
+									<span class="star" aria-hidden="true"></span>
+									<span class="star" aria-hidden="true"></span>
+									<span class="star" aria-hidden="true"></span>
+									<span class="star" aria-hidden="true"></span>
+									<span class="star" aria-hidden="true"></span>
 								</div>
 								<p class="product-price">499$</p>
 							</div>
 
 							<div class="product">
-								<img class=product-img src="./assets/products/chair33.png" width="auto" height="200px" >
+								<img class="product-img" src="./assets/products/chair33.png" width="500" height="500" alt="Black and red racing-style gaming chair with high back and integrated headrest">
 								<p class="product-name">Titan Gaming Chair</p>
-								<div class="star-rating">
-									<span class="star"></span>
-									<span class="star"></span>
-									<span class="star"></span>
-									<span class="star"></span>
-									<span class="star"></span>
+								<div class="star-rating" aria-label="5 out of 5 stars">
+									<span class="star" aria-hidden="true"></span>
+									<span class="star" aria-hidden="true"></span>
+									<span class="star" aria-hidden="true"></span>
+									<span class="star" aria-hidden="true"></span>
+									<span class="star" aria-hidden="true"></span>
 								</div>
 								<p class="product-price">299$</p>
 							</div>
 	
 							<div class="product">
-								<img class=product-img src="./assets/products/chair44.png" width="auto" height="200px" >
+								<img class="product-img" src="./assets/products/chair44.png" width="500" height="500" alt="Grey ergonomic office chair with mesh backrest and adjustable armrests">
 								<p class="product-name">Nova Ergonomic Chair</p>
-								<div class="star-rating">
-									<span class="star"></span>
-									<span class="star"></span>
-									<span class="star"></span>
-									<span class="star"></span>
-									<span class="star"></span>
+								<div class="star-rating" aria-label="5 out of 5 stars">
+									<span class="star" aria-hidden="true"></span>
+									<span class="star" aria-hidden="true"></span>
+									<span class="star" aria-hidden="true"></span>
+									<span class="star" aria-hidden="true"></span>
+									<span class="star" aria-hidden="true"></span>
 								</div>
 								<p class="product-price">419$</p>
 							</div>
 	
 							<div class="product">
-								<img class=product-img src="./assets/products/chair55.png" width="auto" height="200px" >
+								<img class="product-img" src="./assets/products/chair55.png" width="500" height="500" alt="Premium black leather office chair with high back and adjustable headrest">
 								<p class="product-name">Apex Office Chair</p>
-								<div class="star-rating">
-									<span class="star"></span>
-									<span class="star"></span>
-									<span class="star"></span>
-									<span class="star"></span>
-									<span class="star"></span>
+								<div class="star-rating" aria-label="5 out of 5 stars">
+									<span class="star" aria-hidden="true"></span>
+									<span class="star" aria-hidden="true"></span>
+									<span class="star" aria-hidden="true"></span>
+									<span class="star" aria-hidden="true"></span>
+									<span class="star" aria-hidden="true"></span>
 								</div>
 								<p class="product-price">999$</p>
 							</div>
 	
 							<div class="product">
-								<img class=product-img src="./assets/products/chair66.png" width="auto" height="200px" >
+								<img class="product-img" src="./assets/products/chair66.png" width="538" height="464" alt="Compact fabric task chair without armrests, suited for a study desk">
 								<p class="product-name">Focus Study Chair</p>
-								<div class="star-rating">
-									<span class="star"></span>
-									<span class="star"></span>
-									<span class="star"></span>
-									<span class="star"></span>
-									<span class="star"></span>
+								<div class="star-rating" aria-label="5 out of 5 stars">
+									<span class="star" aria-hidden="true"></span>
+									<span class="star" aria-hidden="true"></span>
+									<span class="star" aria-hidden="true"></span>
+									<span class="star" aria-hidden="true"></span>
+									<span class="star" aria-hidden="true"></span>
 								</div>
 								<p class="product-price">249$</p>
 							</div>
 						</div>
 					</section>
-					<button class="next"></button>
+					<button class="next" aria-label="Next product"></button>
 				</section>
 			</section>
 
@@ -262,54 +267,54 @@
 				<h2 class="section-title">Reviews (Customers):</h2>
 				<section class="container">
 					<div class="card">
-						<div class="star-rating">
-							<span class="star"></span>
-							<span class="star"></span>
-							<span class="star"></span>
-							<span class="star"></span>
-							<span class="star"></span>
+						<div class="star-rating" aria-label="5 out of 5 stars">
+							<span class="star" aria-hidden="true"></span>
+							<span class="star" aria-hidden="true"></span>
+							<span class="star" aria-hidden="true"></span>
+							<span class="star" aria-hidden="true"></span>
+							<span class="star" aria-hidden="true"></span>
 						</div>
 						<p class="quote">"My back used to hurt from the long hours I spent sitting at work, and I gradually became afraid of sitting altogether. But after trying your chair, everything changed. Sitting has become as normal and natural as ever in my day. Thank you so much for your effort and dedication."</p>
-						<img class="avatar" src="./assets/icons/a-mehdi.svg" width=35 height=35>
+						<img class="avatar" src="./assets/icons/a-mehdi.svg" width="800" height="800" alt="">
 						<h4 class="name">Mehdi (Freelance Developer)</h4>
 					</div>
 
 					<div class="card">
-						<div class="star-rating">
-							<span class="star"></span>
-							<span class="star"></span>
-							<span class="star"></span>
-							<span class="star"></span>
-							<span class="star"></span>
+						<div class="star-rating" aria-label="5 out of 5 stars">
+							<span class="star" aria-hidden="true"></span>
+							<span class="star" aria-hidden="true"></span>
+							<span class="star" aria-hidden="true"></span>
+							<span class="star" aria-hidden="true"></span>
+							<span class="star" aria-hidden="true"></span>
 						</div>
 						<p class="quote">"I spend most of my day designing, which means sitting for hours without many breaks. This chair gave me the support I had been missing for years. It's comfortable, sturdy, and has noticeably reduced the fatigue I used to feel by the end of the day."</p>
-						<img src="./assets/icons/a-john.svg" width=35 height=35>
+						<img class="avatar" src="./assets/icons/a-john.svg" width=800 height=800 alt="">
 						<h4>John (Graphic Designer)</h4>
 					</div>
 
 					<div class="card">
-						<div class="star-rating">
-							<span class="star"></span>
-							<span class="star"></span>
-							<span class="star"></span>
-							<span class="star"></span>
-							<span class="star"></span>
+						<div class="star-rating" aria-label="5 out of 5 stars">
+							<span class="star" aria-hidden="true"></span>
+							<span class="star" aria-hidden="true"></span>
+							<span class="star" aria-hidden="true"></span>
+							<span class="star" aria-hidden="true"></span>
+							<span class="star" aria-hidden="true"></span>
 						</div>
 						<p class="quote">"As a student, I often study late into the night, and finding a chair that stays comfortable for long sessions was never easy. Since I started using this one, I can focus on my work without constantly shifting around to get comfortable. It has made a real difference in my daily routine."</p>
-						<img src="./assets/icons/a-sara.svg" width=35 height=35>
+						<img class="avatar" src="./assets/icons/a-sara.svg" width="800" height="800" alt="">
 						<h4 class="name">Sara (University Student)</h4>
 					</div>
 
 					<div class="card">
-						<div class="star-rating">
-							<span class="star"></span>
-							<span class="star"></span>
-							<span class="star"></span>
-							<span class="star"></span>
-							<span class="star"></span>
+						<div class="star-rating" aria-label="5 out of 5 stars">
+							<span class="star" aria-hidden="true"></span>
+							<span class="star" aria-hidden="true"></span>
+							<span class="star" aria-hidden="true"></span>
+							<span class="star" aria-hidden="true"></span>
+							<span class="star" aria-hidden="true"></span>
 						</div>
 						<p class="quote">"I've tried several office chairs over the years, but this is the first one that truly feels designed for people who sit all day. The build quality is excellent, the ergonomic support is noticeable, and after weeks of use, I can confidently say it was worth every penny."</p>
-						<img src="./assets/icons/a-jake.svg" width=35 height=35>
+						<img class="avatar" src="./assets/icons/a-jake.svg" width="800" height="800" alt="">
 						<h4 class="name">Jake (Software Engineer)</h4>
 					</div>
 				</section>
@@ -341,67 +346,69 @@
 		</main>
 
 <!-- ======== Case-study ======== -->
-<section id="case-study" class="case-study">
-    <div class="container">
-        <h2 class="section-title">About This Project — by El Habib H.</h2>
-        <p>
-        This website is a fictional portfolio piece built by <strong>El Habib H.</strong>, a frontend developer who builds responsive landing pages and busines websites with HTML, CSS, and JavaScript. Casa Sevilla Restaurant does not exist — this project demonstrates real, hands-on skills: clean semantic markup, fast-loading responsive layouts, and on-page technical SEO (structured data, meta targeting, Core Web Vitals optimization).
-        </p>
-        <p>
-        Need a modern landing page or business website for your brand?
-        <a href="https://www.upwork.com/freelancers/~01af3ead7831321b86" target="_blank">Hire me on Upwork</a>
-        <br class="cta-break">
-        <span class="cta-or">or</span> <a href="https://github.com/elhabib-creator/coachjames.git" ta>see the code on GitHub</a>
-        </p>
-    <div>
-</section>
-			<!--=====Footer================================-->
+        <section id="case-study" class="case-study">
+            <div class="container">
+                <h2 class="section-title">About This Project — by El Habib H.</h2>
+                <p>
+                This website is a fictional portfolio piece built by <strong>El Habib H.</strong>, a frontend developer who builds responsive landing pages and business websites with HTML, CSS, and JavaScript. SIT does not exist as a real company — this project demonstrates real, hands-on skills: clean semantic markup, fast-loading responsive layouts, and on-page technical SEO (structured data, meta targeting, Core Web Vitals optimization).
+                </p>
+                <p>
+                Need a modern landing page or business website for your brand?
+                <a href="https://www.upwork.com/freelancers/~01af3ead7831321b86" target="_blank">Hire me on Upwork</a>
+                <br class="cta-break">
+                <span class="cta-or">or</span> <a href="https://github.com/elhabib-creator/sit-company.git" target="_blank">see the code on GitHub</a>
+                </p>
+            </div>
+        </section>
+
+        <!--=====Footer================================-->
 		<footer>
 			<!--++++++++++ligne one++++++++++-->
 			<section class="row-one">
 				<section class="top">
 					<div class="column">
-						<a href="/"><img class="brand-LOGO" src="./assets/icons/logo.svg"></a>
+						<a class="home" href="./index.html"><img class="brand-LOGO" src="./assets/icons/logo.svg" width="48" height="48" alt=""></a>
 						<p class="slogan">comfort, health &amp; enjoyment</p>
 					</div>
-					<nav class= "column">
+					<nav class="column">
 						<h3>Products</h3>
-						<a target="_blank" href="https://sit.com/shop/#office">Office</a>
-						<a target="_blank" href="https://sit.com/shop/#gaming">Gaming</a>
-						<a target="_blank" href="https://sit.com/shop/#meeting">Meeting</a>
+						<a href="./demo/demo-page.html?section=office">Office</a>
+						<a href="./demo/demo-page.html?section=gaming">Gaming</a>
+						<a href="./demo/demo-page.html?section=meeting">Meeting</a>
 					</nav>
 					<nav class="column">
 						<h3>Support</h3>
-						<a target="_blank" href="https://sit.com/shipping">Shipping</a>
-						<a target="_blank" href="https://sit.com/returns">Returns</a>
-						<a target="_blank" href="https://sit.com/warranty">Warranty</a>
-						<a target="_blank" href="https://sit.com/contact">Contact</a>
+						<a href="./demo/demo-page.html?section=shipping">Shipping</a>
+						<a href="./demo/demo-page.html?section=returns">Returns</a>
+						<a href="./demo/demo-page.html?section=warranty">Warranty</a>
+						<a href="./demo/demo-page.html?section=contact-us">Contact</a>
 					</nav>
 					<nav class="column">
 						<h3>Company</h3>
-						<a target="_blank" href="https://sit.com/about">About</a>
-						<a target="_blank" href="https://sit.com/company">FAQ</a>
-						<a target="_blank" href="https://sit.com/careers">Careers</a>
-						<a target="_blank" href="https://sit.com/contact">Business Solutions</a>
+						<a href="./demo/demo-page.html?section=about">About</a>
+						<a href="./demo/demo-page.html?section=company">FAQ</a>
+						<a href="./demo/demo-page.html?section=careers">Careers</a>
+						<a href="./demo/demo-page.html?section=contact-us">Business Solutions</a>
 					</nav>
 		    		</section>
 
 				<section class="bottom">
 					<h3 class="title">Stay updated</h3>
 					<p class="paragraphe">Get product updates and ergonomic tips.</p>
-					<div>
-						<input type="email" placeholder="example@email.com">
-						<button class="subscribe">Subscribe</button>
-					</div>
+                    <form class="newsletter">
+                        <label for="newsletter-email" class="visually-hidden">Email address</label>
+                        <input id="newsletter-email" type="email" name="email" placeholder="example@email.com" required>
+                        <button type="submit" class="subscribe">Subscribe</button>
+                    </form>
 				</section>
 			</section>
 
 			<!--++++++++ligne two+++++++++-->
 			<nav class="row-two">
-				<a target="_blank" href="https://instagram.com/sit"><img class="icon" alt="Instagram" src="/assets/icons/instagram.svg"></a>
-				<a target="_blank" href="https://linkedin.com/sit"><img class="icon" alt="LinkedIn" src="/assets/icons/linkedin.svg"></a>
-				<a target="_blank" href="https://facebook.com/sit"><img class="icon" alt="Facebook" src="/assets/icons/facebook.svg"></a>
-				<a target="_blank" href="https://X.com/sit"><img class="icon" alt="X" src="/assets/icons/x.svg"></a>
+				<a href="./demo/demo-link.html?from=instagram" target="_blank"><img class="icon" alt="Instagram" src="/assets/icons/instagram.svg"></a>
+				<a href="./demo/demo-link.html?from=linkedin" target="_blank"><img class="icon" alt="LinkedIn" src="/assets/icons/linkedin.svg"></a>
+				<a href="demo/demo-link.html?from=facebook" target="_blank"><img class="icon" alt="Facebook" src="/assets/icons/facebook.svg"></a>
+				<a href="demo/demo-link.html?from=x" target="_blank"><img class="icon" alt="X" src="/assets/icons/x.svg"></a>
 			</nav>
 			<!--++++++++ligne tree++++++++-->
 			<section class="row-tree">
