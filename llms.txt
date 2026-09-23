@@ -1,0 +1,24 @@
+# SIT
+
+> SIT is a fictional ergonomic office chair company, built as a single-page portfolio demo by El Habib H., a frontend developer, to demonstrate responsive web design, accessibility, and on-page SEO.
+
+Disclosure: SIT does not sell real products or operate as a real business. The homepage is the only real, fully built page on this site. Other navigation items (Shop, About, Careers, Shipping, social media links, etc.) lead to placeholder pages that clearly explain the demo nature of the project, rather than to real content or real external accounts.
+
+## Homepage
+- [SIT — Home](https://sit-company.pages.dev/): Full landing page for a fictional ergonomic chair brand — hero section, value propositions, a product carousel, recommendations, and customer reviews.
+- [Why SIT](https://sit-company.pages.dev/#why): Three core value propositions — lumbar support, breathable materials, five-year warranty.
+- [Recommendations](https://sit-company.pages.dev/#recommended): Fictional endorsements from research labs and orthopedic associations, used to demonstrate a trust-building content pattern.
+- [Reviews](https://sit-company.pages.dev/#reviews): Fictional customer testimonials from a range of professions.
+
+## Products shown on the homepage
+Illustrative product cards used to demonstrate a product carousel — not a real, purchasable catalog:
+- Prestige Executive Chair — $319
+- Harmony Conference Chair — $499
+- Titan Gaming Chair — $299
+- Nova Ergonomic Chair — $419
+- Apex Office Chair — $999
+- Focus Study Chair — $249
+
+## About the developer
+- [Hire El Habib H. on Upwork](https://www.upwork.com/freelancers/~01af3ead7831321b86): Freelance profile for frontend development and landing page work.
+- [Source code on GitHub](https://github.com/elhabib-creator/sit-company.git): Full source of this project.

@@ -1,0 +1,28 @@
+# robots.txt for https://sit-company.pages.dev
+# SIT — Ergonomic Seating Solutions
+
+User-agent: *
+Allow: /
+
+# --- AI / LLM crawlers ---
+# Explicitly allowed so assistants can read llms.txt and site content
+# to answer questions about SIT's products and services.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://sit-company.pages.dev/sitemap.xml
